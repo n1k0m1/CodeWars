@@ -17,4 +17,3 @@ unsigned int number(const std::vector<std::pair<int, int>>& busStops)
 }
 
 #endif // !NUMBER_OF_PEOPLE_IN_THE_BUS_KATA
-
