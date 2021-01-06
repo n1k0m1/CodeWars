@@ -1,5 +1,5 @@
-#ifndef IS_NUMBER_A_PRIME_KATA
-#define IS_NUMBER_A_PRIME_KATA
+#ifndef IS_A_NUMBER_PRIME_KATA
+#define IS_A_NUMBER_PRIME_KATA
 
 //https://www.codewars.com/kata/5262119038c0985a5b00029f
 
