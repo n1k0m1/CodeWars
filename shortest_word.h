@@ -5,23 +5,21 @@
 
 #include <string>
 
-int find_short1(std::string str)
+int find_short(std::string str)
 {
 	size_t start = 0;
 	size_t end = 0;
-	int length = 0;
-	int minLength = 0;
+	size_t length = str.size();
 
 	do
 	{
 		end = str.find(' ', start);
 
-		length = end - start;
-		if (length > 0)
+		if (end - start > 0)
 		{
-			if ((length < minLength) || (minLength == 0))
+			if (length > end - start)
 			{
-				minLength = length;
+				length = end - start;
 			}
 		}
 
@@ -29,7 +27,7 @@ int find_short1(std::string str)
 
 	} while (end < str.size());
 
-	return minLength;
+	return length;
 }
 
 #endif // !SHORTEST_WORD_KATA
