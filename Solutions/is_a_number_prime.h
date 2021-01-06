@@ -3,23 +3,25 @@
 
 //https://www.codewars.com/kata/5262119038c0985a5b00029f
 
+#include <cmath>
+
 bool isPrime(int num)
 {
     if (num > 1)
     {
-        int temp = num - 1;
-        while (temp > 1)
+        for (int index = 2; index <= sqrt(num); ++index)
         {
-            if (num % temp == 0)
+            if (num % index == 0)
             {
                 return false;
             }
-            temp -= 1;
         }
         return true;
     }
-
-    return false;
+    else
+    {
+        return false;
+    }
 }
 
 #endif
