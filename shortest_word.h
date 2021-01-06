@@ -13,7 +13,7 @@ int find_short(std::string str)
 
 	do
 	{
-		end = str.find(' ', start);
+		end = str.find_first_of(" \0", start);
 
 		if (end - start > 0)
 		{
