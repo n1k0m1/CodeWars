@@ -1,3 +1,6 @@
+#ifndef EQUAL_SIDES_OF_AN_ARRAY_KATA
+#define EQUAL_SIDES_OF_AN_ARRAY_KATA
+
 //https://www.codewars.com/kata/5679aa472b8f57fb8c000047
 
 #include <vector>
@@ -37,3 +40,5 @@ int find_even_index(const std::vector <int> numbers)
 
 	return -1;
 }
+
+#endif // !EQUAL_SIDES_OF_AN_ARRAY_KATA
