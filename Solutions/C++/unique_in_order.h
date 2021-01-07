@@ -9,12 +9,41 @@
 template <typename T>
 std::vector<T> uniqueInOrder(const std::vector<T>& iterable)
 {
+	std::vector<T> uOrder;
 
+	if (!iterable.empty())
+	{
+		uOrder.push_back(iterable.front());
+
+		for (size_t index = 1; index < iterable.size(); ++index)
+		{
+			if (uOrder.back() != iterable.at(index))
+			{
+				uOrder.push_back(iterable.at(index));
+			}
+		}
+	}
+
+	return uOrder;
 }
-
 std::vector<char> uniqueInOrder(const std::string& iterable)
 {
+	std::vector<char> uOrder;
 
+	if (!iterable.empty())
+	{
+		uOrder.push_back(iterable.front());
+
+		for (size_t index = 1; index < iterable.size(); ++index)
+		{
+			if (uOrder.back() != iterable.at(index))
+			{
+				uOrder.push_back(iterable.at(index));
+			}
+		}
+	}
+
+	return uOrder;
 }
 
 #endif
